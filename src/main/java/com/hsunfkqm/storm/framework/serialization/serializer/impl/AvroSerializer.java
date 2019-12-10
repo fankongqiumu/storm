@@ -12,7 +12,7 @@ import java.io.ByteArrayOutputStream;
 
 /**
  * @author hsun
- * @Descrption java默认序列化
+ * @Descrption avro
  * @DATE 19-12-01 下午08:32
  ***/
 public class AvroSerializer implements ISerializer {

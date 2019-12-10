@@ -1,4 +1,4 @@
-package com.hsunfkqm.storm.framework.revoker;
+package com.hsunfkqm.storm.framework.consumer;
 
 
 import com.hsunfkqm.storm.framework.cluster.ClusterStrategy;
@@ -6,8 +6,8 @@ import com.hsunfkqm.storm.framework.cluster.engine.ClusterEngine;
 import com.hsunfkqm.storm.framework.internal.StormRequest;
 import com.hsunfkqm.storm.framework.internal.StormResponse;
 import com.hsunfkqm.storm.framework.internal.ProviderService;
-import com.hsunfkqm.storm.framework.zookeeper.IRegisterCenter4Invoker;
-import com.hsunfkqm.storm.framework.zookeeper.RegisterCenter;
+import com.hsunfkqm.storm.framework.register.IRegisterCenter4Invoker;
+import com.hsunfkqm.storm.framework.register.RegisterCenter;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

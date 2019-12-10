@@ -1,10 +1,10 @@
-package com.hsunfkqm.storm.framework.revoker;
+package com.hsunfkqm.storm.framework.consumer;
 
 
 import com.hsunfkqm.storm.framework.internal.InvokerService;
 import com.hsunfkqm.storm.framework.internal.ProviderService;
-import com.hsunfkqm.storm.framework.zookeeper.IRegisterCenter4Invoker;
-import com.hsunfkqm.storm.framework.zookeeper.RegisterCenter;
+import com.hsunfkqm.storm.framework.register.IRegisterCenter4Invoker;
+import com.hsunfkqm.storm.framework.register.RegisterCenter;
 import org.apache.commons.collections.MapUtils;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;

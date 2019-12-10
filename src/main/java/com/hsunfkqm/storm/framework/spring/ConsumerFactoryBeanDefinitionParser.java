@@ -1,6 +1,6 @@
 package com.hsunfkqm.storm.framework.spring;
 
-import com.hsunfkqm.storm.framework.revoker.RevokerFactoryBean;
+import com.hsunfkqm.storm.framework.consumer.RevokerFactoryBean;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,10 +13,10 @@ import org.w3c.dom.Element;
  * @Descrption 服务引入解析
  * @DATE 19-11-23 下午6:09
  ***/
-public class RevokerFactoryBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
+public class ConsumerFactoryBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
 
     //logger
-    private static final Logger logger = LoggerFactory.getLogger(RevokerFactoryBeanDefinitionParser.class);
+    private static final Logger logger = LoggerFactory.getLogger(ConsumerFactoryBeanDefinitionParser.class);
 
     protected Class getBeanClass(Element element) {
         return RevokerFactoryBean.class;
@@ -42,7 +42,7 @@ public class RevokerFactoryBeanDefinitionParser extends AbstractSingleBeanDefini
                 bean.addPropertyValue("groupName", groupName);
             }
         } catch (Exception e) {
-            logger.error("RevokerFactoryBeanDefinitionParser error.", e);
+            logger.error("ConsumerFactoryBeanDefinitionParser error.", e);
             throw new RuntimeException(e);
         }
 

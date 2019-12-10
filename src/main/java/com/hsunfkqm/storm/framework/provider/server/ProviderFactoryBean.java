@@ -3,8 +3,8 @@ package com.hsunfkqm.storm.framework.provider.server;
 import com.google.common.collect.Lists;
 import com.hsunfkqm.storm.framework.helper.IPHelper;
 import com.hsunfkqm.storm.framework.internal.ProviderService;
-import com.hsunfkqm.storm.framework.zookeeper.IRegisterCenter4Provider;
-import com.hsunfkqm.storm.framework.zookeeper.RegisterCenter;
+import com.hsunfkqm.storm.framework.register.IRegisterCenter4Provider;
+import com.hsunfkqm.storm.framework.register.RegisterCenter;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;
 

@@ -1,4 +1,4 @@
-package com.hsunfkqm.storm.framework.zookeeper;
+package com.hsunfkqm.storm.framework.register;
 
 import com.hsunfkqm.storm.framework.internal.InvokerService;
 import com.hsunfkqm.storm.framework.internal.ProviderService;
