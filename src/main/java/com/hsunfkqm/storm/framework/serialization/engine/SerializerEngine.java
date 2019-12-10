@@ -4,7 +4,7 @@ package com.hsunfkqm.storm.framework.serialization.engine;
 
 import avro.shaded.com.google.common.collect.Maps;
 import com.hsunfkqm.storm.framework.serialization.common.SerializeType;
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 import com.hsunfkqm.storm.framework.serialization.serializer.impl.*;
 
 import java.util.Map;
@@ -16,7 +16,7 @@ import java.util.Map;
  ***/
 public class SerializerEngine {
 
-    public static final Map<SerializeType, ISerializer> serializerMap = Maps.newConcurrentMap();
+    public static final Map<SerializeType, Serializer> serializerMap = Maps.newConcurrentMap();
 
     static {
         serializerMap.put(SerializeType.DefaultJavaSerializer, new DefaultJavaSerializer());
@@ -39,7 +39,7 @@ public class SerializerEngine {
             throw new RuntimeException("serialize is null");
         }
 
-        ISerializer serializer = serializerMap.get(serialize);
+        Serializer serializer = serializerMap.get(serialize);
         if (serializer == null) {
             throw new RuntimeException("serialize error");
         }
@@ -58,7 +58,7 @@ public class SerializerEngine {
         if (serialize == null) {
             throw new RuntimeException("serialize is null");
         }
-        ISerializer serializer = serializerMap.get(serialize);
+        Serializer serializer = serializerMap.get(serialize);
         if (serializer == null) {
             throw new RuntimeException("serialize error");
         }

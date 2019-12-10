@@ -52,28 +52,28 @@ public class NettyServerInvokeHandler extends SimpleChannelInboundHandler<StormR
 
         if (ctx.channel().isWritable()) {
             //从服务调用对象里获取服务提供者信息
-            ProviderService metaDataModel = request.getProviderService();
+            ProviderService serviceMetaData = request.getProviderService();
             long consumeTimeOut = request.getInvokeTimeout();
             final String methodName = request.getInvokedMethodName();
 
             //根据方法名称定位到具体某一个服务提供者
-            String serviceKey = metaDataModel.getServiceItf().getName();
+            String serviceName = serviceMetaData.getServiceItf().getName();
             //获取限流工具类
-            int workerThread = metaDataModel.getWorkerThreads();
-            Semaphore semaphore = serviceKeySemaphoreMap.get(serviceKey);
+            int workerThread = serviceMetaData.getWorkerThreads();
+            Semaphore semaphore = serviceKeySemaphoreMap.get(serviceName);
             if (semaphore == null) {
                 synchronized (serviceKeySemaphoreMap) {
-                    semaphore = serviceKeySemaphoreMap.get(serviceKey);
+                    semaphore = serviceKeySemaphoreMap.get(serviceName);
                     if (semaphore == null) {
                         semaphore = new Semaphore(workerThread);
-                        serviceKeySemaphoreMap.put(serviceKey, semaphore);
+                        serviceKeySemaphoreMap.put(serviceName, semaphore);
                     }
                 }
             }
 
             //获取注册中心服务
             IRegisterCenter4Provider registerCenter4Provider = RegisterCenter.singleton();
-            List<ProviderService> localProviderCaches = registerCenter4Provider.getProviderServiceMap().get(serviceKey);
+            List<ProviderService> localProviderCaches = registerCenter4Provider.getProviderServiceMap().get(serviceName);
 
             Object result = null;
             boolean acquire = false;

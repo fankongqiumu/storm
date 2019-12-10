@@ -5,7 +5,7 @@ package com.hsunfkqm.storm.framework.serialization.serializer;
  * @Descrption
  * @DATE 19-11-27 下午08:32
  ***/
-public interface ISerializer {
+public interface Serializer {
 
     /**
      * 序列化

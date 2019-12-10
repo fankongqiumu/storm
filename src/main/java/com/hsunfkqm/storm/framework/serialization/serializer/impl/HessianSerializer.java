@@ -3,7 +3,7 @@ package com.hsunfkqm.storm.framework.serialization.serializer.impl;
 
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -13,7 +13,7 @@ import java.io.ByteArrayOutputStream;
  * @Descrption
  * @DATE 19-11-27 下午09:42
  ***/
-public class HessianSerializer implements ISerializer {
+public class HessianSerializer implements Serializer {
 
 
     public byte[] serialize(Object obj) {

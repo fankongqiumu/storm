@@ -17,7 +17,7 @@ import java.util.Map;
  * @Descrption 服务bean引入入口
  * @DATE 19-12-04 下午11:34
  ***/
-public class RevokerFactoryBean implements FactoryBean, InitializingBean {
+public class InvokerFactoryBean implements FactoryBean, InitializingBean {
 
     //服务接口
     private Class<?> targetInterface;
@@ -64,7 +64,7 @@ public class RevokerFactoryBean implements FactoryBean, InitializingBean {
         NettyChannelPoolFactory.channelPoolFactoryInstance().initChannelPoolFactory(providerMap);
 
         //获取服务提供者代理对象
-        RevokerProxyBeanFactory proxyFactory = RevokerProxyBeanFactory.singleton(targetInterface, timeout, clusterStrategy);
+        InvokerProxyBeanFactory proxyFactory = InvokerProxyBeanFactory.singleton(targetInterface, timeout, clusterStrategy);
         this.serviceObject = proxyFactory.getProxy();
 
         //将消费者信息注册到注册中心

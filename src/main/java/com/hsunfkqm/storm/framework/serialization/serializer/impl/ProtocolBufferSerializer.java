@@ -2,7 +2,7 @@ package com.hsunfkqm.storm.framework.serialization.serializer.impl;
 
 
 
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 import org.apache.commons.lang3.reflect.MethodUtils;
 
 /**
@@ -10,7 +10,7 @@ import org.apache.commons.lang3.reflect.MethodUtils;
  * @Descrption
  * @DATE 19-11-25 下午10:52
  ***/
-public class ProtocolBufferSerializer implements ISerializer {
+public class ProtocolBufferSerializer implements Serializer {
 
 
     public <T> byte[] serialize(T obj) {

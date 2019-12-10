@@ -5,7 +5,7 @@ import com.dyuproject.protostuff.LinkedBuffer;
 import com.dyuproject.protostuff.ProtostuffIOUtil;
 import com.dyuproject.protostuff.Schema;
 import com.dyuproject.protostuff.runtime.RuntimeSchema;
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Descrption
  * @DATE 19-11-28 下午09:45
  ***/
-public class ProtoStuffSerializer implements ISerializer {
+public class ProtoStuffSerializer implements Serializer {
 
 
     private static Map<Class<?>, Schema<?>> cachedSchema = new ConcurrentHashMap<Class<?>, Schema<?>>();

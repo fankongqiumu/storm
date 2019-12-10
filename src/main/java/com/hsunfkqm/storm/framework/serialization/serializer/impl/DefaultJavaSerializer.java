@@ -2,7 +2,7 @@ package com.hsunfkqm.storm.framework.serialization.serializer.impl;
 
 
 
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -14,7 +14,7 @@ import java.io.ObjectOutputStream;
  * @Descrption java默认序列化
  * @DATE 19-12-02 下午09:52
  ***/
-public class DefaultJavaSerializer implements ISerializer {
+public class DefaultJavaSerializer implements Serializer {
 
 
     public <T> byte[] serialize(T obj) {

@@ -1,7 +1,7 @@
 package com.hsunfkqm.storm.framework.serialization.serializer.impl;
 
 
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 import org.apache.thrift.TBase;
 import org.apache.thrift.TDeserializer;
 import org.apache.thrift.TException;
@@ -13,7 +13,7 @@ import org.apache.thrift.protocol.TBinaryProtocol;
  * @Descrption
  * @DATE 19-11-23 下午08:48
  ***/
-public class ThriftSerializer implements ISerializer {
+public class ThriftSerializer implements Serializer {
 
 
     public <T> byte[] serialize(T obj) {

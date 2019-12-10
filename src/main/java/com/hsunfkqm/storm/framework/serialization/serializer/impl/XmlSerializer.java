@@ -1,7 +1,7 @@
 package com.hsunfkqm.storm.framework.serialization.serializer.impl;
 
 
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
@@ -10,7 +10,7 @@ import com.thoughtworks.xstream.io.xml.DomDriver;
  * @Descrption
  * @DATE 19-11-21 下午6:39
  ***/
-public class XmlSerializer implements ISerializer {
+public class XmlSerializer implements Serializer {
 
     private static final XStream xStream = new XStream(new DomDriver());
 

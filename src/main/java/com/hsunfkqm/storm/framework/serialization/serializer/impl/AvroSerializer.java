@@ -2,7 +2,7 @@ package com.hsunfkqm.storm.framework.serialization.serializer.impl;
 
 
 
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 import org.apache.avro.io.*;
 import org.apache.avro.specific.SpecificDatumReader;
 import org.apache.avro.specific.SpecificDatumWriter;
@@ -15,7 +15,7 @@ import java.io.ByteArrayOutputStream;
  * @Descrption avro
  * @DATE 19-12-01 下午08:32
  ***/
-public class AvroSerializer implements ISerializer {
+public class AvroSerializer implements Serializer {
 
 
     @Override

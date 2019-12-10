@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.hsunfkqm.storm.framework.serialization.common.FDateJsonDeserializer;
 import com.hsunfkqm.storm.framework.serialization.common.FDateJsonSerializer;
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 
 import java.util.Date;
 
@@ -17,7 +17,7 @@ import java.util.Date;
  * @Descrption
  * @DATE 19-12-01 下午08:32
  ***/
-public class JSONSerializer implements ISerializer {
+public class JSONSerializer implements Serializer {
 
 
     private static final ObjectMapper objectMapper = new ObjectMapper();

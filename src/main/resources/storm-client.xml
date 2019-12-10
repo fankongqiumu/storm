@@ -10,8 +10,16 @@
     <storm:reference id="helloService"
                           interface="com.hsunfkqm.storm.framework.test.HelloService"
                           clusterStrategy="WeightRandom"
-                          remoteAppKey="ares"
+                          remoteAppKey="storm"
                           groupName="default"
                           timeout="3000"/>
+
+    <!-- 引入远程服务 -->
+    <storm:reference id="userService"
+                     interface="com.hsunfkqm.storm.framework.test.UserService"
+                     clusterStrategy="WeightRandom"
+                     remoteAppKey="storm"
+                     groupName="default"
+                     timeout="3000"/>
 
 </beans>

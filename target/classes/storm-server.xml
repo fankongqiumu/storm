@@ -12,10 +12,21 @@
                         ref="helloService"
                         groupName="default"
                         weight="2"
-                        appKey="ares"
+                        appKey="storm"
                         workerThreads="100"
                         serverPort="8081"
                         timeout="600"/>
+
+    <bean id="userService" class="com.hsunfkqm.storm.framework.test.UserServiceImpl"/>
+    <storm:service id="userServiceRegister"
+                   interface="com.hsunfkqm.storm.framework.test.UserService"
+                   ref="userService"
+                   groupName="default"
+                   weight="2"
+                   appKey="storm"
+                   workerThreads="100"
+                   serverPort="8081"
+                   timeout="600"/>
 
 <!--    <storm:application name="storm-demo"/>-->
 <!--    <storm:protocol name="storm" port="8080"/>-->

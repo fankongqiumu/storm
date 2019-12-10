@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  * @Descrption
  * @DATE 19-11-25 下午09:14
  ***/
-public class RevokerResponseHolder {
+public class InvokerResponseHolder {
 
     //服务返回结果Map
     private static final Map<String, StormResponseWrapper> responseMap = Maps.newConcurrentMap();

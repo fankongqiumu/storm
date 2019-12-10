@@ -1,6 +1,6 @@
 package com.hsunfkqm.storm.framework.spring;
 
-import com.hsunfkqm.storm.framework.consumer.RevokerFactoryBean;
+import com.hsunfkqm.storm.framework.consumer.InvokerFactoryBean;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ public class ConsumerFactoryBeanDefinitionParser extends AbstractSingleBeanDefin
     private static final Logger logger = LoggerFactory.getLogger(ConsumerFactoryBeanDefinitionParser.class);
 
     protected Class getBeanClass(Element element) {
-        return RevokerFactoryBean.class;
+        return InvokerFactoryBean.class;
     }
 
     protected void doParse(Element element, BeanDefinitionBuilder bean) {

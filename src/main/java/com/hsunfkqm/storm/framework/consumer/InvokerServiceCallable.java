@@ -18,20 +18,20 @@ import java.util.concurrent.TimeUnit;
  * @Descrption Netty 请求发起线程
  * @DATE 19-11-25 下午08:51
  ***/
-public class RevokerServiceCallable implements Callable<StormResponse> {
+public class InvokerServiceCallable implements Callable<StormResponse> {
 
-    private static final Logger logger = LoggerFactory.getLogger(RevokerServiceCallable.class);
+    private static final Logger logger = LoggerFactory.getLogger(InvokerServiceCallable.class);
 
     private Channel channel;
     private InetSocketAddress inetSocketAddress;
     private StormRequest request;
 
-    public static RevokerServiceCallable of(InetSocketAddress inetSocketAddress, StormRequest request) {
-        return new RevokerServiceCallable(inetSocketAddress, request);
+    public static InvokerServiceCallable of(InetSocketAddress inetSocketAddress, StormRequest request) {
+        return new InvokerServiceCallable(inetSocketAddress, request);
     }
 
 
-    public RevokerServiceCallable(InetSocketAddress inetSocketAddress, StormRequest request) {
+    public InvokerServiceCallable(InetSocketAddress inetSocketAddress, StormRequest request) {
         this.inetSocketAddress = inetSocketAddress;
         this.request = request;
     }
@@ -39,7 +39,7 @@ public class RevokerServiceCallable implements Callable<StormResponse> {
     @Override
     public StormResponse call() throws Exception {
         //初始化返回结果容器,将本次调用的唯一标识作为Key存入返回结果的Map
-        RevokerResponseHolder.initResponseData(request.getUniqueKey());
+        InvokerResponseHolder.initResponseData(request.getUniqueKey());
         //根据本地调用服务提供者地址获取对应的Netty通道channel队列
         ArrayBlockingQueue<Channel> blockingQueue = NettyChannelPoolFactory.channelPoolFactoryInstance().acquire(inetSocketAddress);
         try {
@@ -64,7 +64,7 @@ public class RevokerServiceCallable implements Callable<StormResponse> {
 
             //从返回结果容器中获取返回结果,同时设置等待超时时间为invokeTimeout
             long invokeTimeout = request.getInvokeTimeout();
-            return RevokerResponseHolder.getValue(request.getUniqueKey(), invokeTimeout);
+            return InvokerResponseHolder.getValue(request.getUniqueKey(), invokeTimeout);
         } catch (Exception e) {
             logger.error("service invoke error.", e);
         } finally {

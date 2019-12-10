@@ -1,7 +1,7 @@
 package com.hsunfkqm.storm.framework.serialization.serializer.impl;
 
 
-import com.hsunfkqm.storm.framework.serialization.serializer.ISerializer;
+import com.hsunfkqm.storm.framework.serialization.serializer.Serializer;
 import org.jboss.marshalling.*;
 
 import java.io.ByteArrayInputStream;
@@ -13,7 +13,7 @@ import java.io.IOException;
  * @Descrption
  * @DATE 19-11-31 下午09:56
  ***/
-public class MarshallingSerializer implements ISerializer {
+public class MarshallingSerializer implements Serializer {
 
     final static MarshallingConfiguration configuration = new MarshallingConfiguration();
     //获取序列化工厂对象,参数serial标识创建的是java序列化工厂对象

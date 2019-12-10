@@ -2,8 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcee2acd-c26d-49d4-bfff-a63397b8f0e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/AvroSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/AvroSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/NettyClientInvokeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/NettyClientInvokeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/RevokerFactoryBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerFactoryBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/RevokerProxyBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerProxyBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/RevokerResponseHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerResponseHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/RevokerServiceCallable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerServiceCallable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/ConsumerFactoryBeanDefinitionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/ConsumerFactoryBeanDefinitionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/MainServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/storm-client.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storm-client.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/storm-server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storm-server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/provider/server/ProviderFactoryBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/provider/server/ProviderFactoryBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/NettyChannelPoolFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/NettyChannelPoolFactory$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/NettyChannelPoolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/NettyClientInvokeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/RevokerFactoryBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/RevokerProxyBeanFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/RevokerResponseHolder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/RevokerResponseHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/revoker/RevokerServiceCallable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/spring/RevokerFactoryBeanDefinitionParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/spring/StormRemoteReferenceNamespaceHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/spring/StormRemoteReferenceNamespaceHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/test/MainClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/IRegisterCenter4Governance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/IRegisterCenter4Invoker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/IRegisterCenter4Provider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/RegisterCenter$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/RegisterCenter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/RegisterCenter$2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/RegisterCenter$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hsunfkqm/storm/framework/zookeeper/RegisterCenter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storm-client.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/storm-client.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storm-server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/storm-server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/storm-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/storm-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,28 +73,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.handlers">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerProxyBeanFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="91" selection-start-column="91" selection-end-column="91" />
+            <state relative-caret-position="464">
+              <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/StormServiceNamespaceHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerServiceCallable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+            <state relative-caret-position="264">
+              <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/ProviderFactoryBeanDefinitionParser.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/NettyChannelPoolFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="48" />
+            <state relative-caret-position="1969">
+              <caret line="208" column="42" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8185#8186#0" expanded="true" />
+                <element signature="e#8226#8227#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerFactoryBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="68" selection-start-line="59" selection-end-line="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,62 +117,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.schemas">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/storm-service.xsd">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="34" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="34" />
+            <state relative-caret-position="132">
+              <caret line="94" column="26" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="26" />
+              <folding>
+                <element signature="e#3096#3365#0" expanded="true" />
+                <element signature="e#3364#3365#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/RevokerFactoryBeanDefinitionParser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/NettyClientInvokeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/AvroSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/ProtocolBufferSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/ThriftSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/XmlSerializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="640">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/StormResponseWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+              <folding>
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,15 +169,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>consumeTimeOut</find>
       <find>serverPort</find>
       <find>serviceProxyObject</find>
       <find>ProviderFactoryBean</find>
@@ -151,7 +189,16 @@
       <find>liyebing</find>
       <find>storm</find>
       <find>storm-rpc</find>
+      <find>providerMap</find>
+      <find>serviceKey</find>
+      <find>metaDataModel</find>
+      <find>consumeTimeOut</find>
     </findStrings>
+    <replaceStrings>
+      <replace>serviceName</replace>
+      <replace>service</replace>
+      <replace>serviceMetaData</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,15 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/XmlSerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/StormServiceNamespaceHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/StormRemoteReferenceNamespaceHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/HelloServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/HelloService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/ProviderFactoryBeanDefinitionParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/engine/SerializerEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/engine/ClusterEngine.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/ClusterStrategyEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/HashClusterStrategyImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/PollingClusterStrategyImpl.java" />
@@ -205,11 +243,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/revoker/RevokerResponseHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/revoker/RevokerServiceCallable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/revoker/RevokerProxyBeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/MainClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/MainServer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/AvroSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/MainClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerFactoryBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerServiceCallable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/storm-server.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/storm-client.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerProxyBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.java" />
       </list>
     </option>
   </component>
@@ -237,7 +284,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1280" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -289,7 +337,44 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="storm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="storm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="storm" type="b2602c69:ProjectViewProjectNode" />
@@ -344,7 +429,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainServer">
+  <component name="RunManager" selected="Application.MainClient">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hsunfkqm.storm.framework.test.Client" />
+      <module name="storm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hsunfkqm.storm.framework.test.MainServer" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IPHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hsunfkqm.storm.framework.helper.IPHelper" />
       <module name="storm" />
@@ -370,7 +468,7 @@
       <module name="storm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hsunfkqm.storm.framework.test.*" />
+          <option name="PATTERN" value="com.hsunfkqm.storm.framework.test.MainServer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -380,6 +478,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainClient" />
         <item itemvalue="Application.MainServer" />
         <item itemvalue="Application.InstanceOfTest" />
         <item itemvalue="Application.IPHelper" />
@@ -400,17 +499,18 @@
       <workItem from="1575074960148" duration="16000" />
       <workItem from="1575889724163" duration="5681000" />
       <workItem from="1575949080913" duration="200000" />
-      <workItem from="1575949298966" duration="3709000" />
+      <workItem from="1575949298966" duration="16045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43733000" />
+    <option name="totallyTimeSpent" value="56069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1922" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24145299" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26923078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -419,13 +519,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36129034" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.21505377" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2956989" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.10107527" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946582" visible="true" weight="0.094623655" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946582" weight="0.43225807" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005342" side_tool="true" weight="0.33010754" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946582" weight="0.32903227" />
@@ -442,7 +542,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2361111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26923078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -451,13 +551,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13763441" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.21505377" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2956989" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.10107527" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946582" weight="0.30215055" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946582" weight="0.43225807" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005342" side_tool="true" weight="0.33010754" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946582" weight="0.32903227" />
@@ -486,242 +586,50 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/ProviderFactoryBean.java</url>
           <line>59</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServer.java</url>
           <line>40</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/RevokerFactoryBeanDefinitionParser.java</url>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/ConsumerFactoryBeanDefinitionParser.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/ProviderFactoryBean.java</url>
           <line>62</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/ProviderFactoryBean.java</url>
           <line>69</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/Client.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/annotation/StomService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" selection-start-line="6" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/HelloServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/StormRemoteReferenceNamespaceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/engine/SerializerEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3350#3351#0" expanded="true" />
-            <element signature="e#3384#3385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/ProviderProxyBeanFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/ProviderFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="40" selection-start-line="22" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/StomServiceScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/register/ResgisterCenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/engine/ClusterEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" selection-start-line="9" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/ClusterStrategyEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/HashClusterStrategyImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/PollingClusterStrategyImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/RandomClusterStrategyImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/WeightPollingClusterStrategyImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/WeightRandomClusterStrategyImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/ClusterStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/helper/PropertyConfigeHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2304#2305#0" expanded="true" />
-            <element signature="e#2336#2337#0" expanded="true" />
-            <element signature="e#2563#2564#0" expanded="true" />
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2658#2659#0" expanded="true" />
-            <element signature="e#2694#2695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/Invocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#373#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/InvokerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/ProviderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/StormApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/StormRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/StormResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/StormResponseWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -732,40 +640,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/revoker/NettyChannelPoolFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/revoker/NettyClientInvokeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/serialization/serializer/impl/DefaultJavaSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" selection-start-line="11" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/revoker/RevokerFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -796,19 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="1067" column="35" selection-start-line="1067" selection-start-column="35" selection-end-line="1067" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/zookeeper/RegisterCenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="method#registerInvoker#0;class#RegisterCenter#0" />
-            <element signature="method#refreshActivityService#0;class#RegisterCenter#0" />
-            <element signature="method#refreshServiceMetaDataMap#0;class#RegisterCenter#0" />
-            <element signature="method#queryProvidersAndInvokers#0;class#RegisterCenter#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -871,36 +736,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.handlers">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/register/IRegisterCenter4Governance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="91" selection-start-column="91" selection-end-column="91" />
+        <state relative-caret-position="180">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.schemas">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/storm-service.xsd">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/register/IRegisterCenter4Provider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="-8">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/RevokerFactoryBeanDefinitionParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/register/ResgisterCenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="140">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/HelloServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/storm-server.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/storm-client.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/MainServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/test/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/register/IRegisterCenter4Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/register/RegisterCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="137" column="28" selection-start-line="137" selection-start-column="28" selection-end-line="137" selection-end-column="28" />
+          <folding>
+            <element signature="e#5955#5956#0" expanded="true" />
+            <element signature="e#6004#6005#0" expanded="true" />
+            <element signature="method#refreshActivityService#0;class#RegisterCenter#0" />
+            <element signature="method#refreshServiceMetaDataMap#0;class#RegisterCenter#0" />
+            <element signature="method#queryProvidersAndInvokers#0;class#RegisterCenter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/impl/HashClusterStrategyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/cluster/engine/ClusterEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/ProviderFactoryBeanDefinitionParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="48" />
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/ProviderFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/spring/ConsumerFactoryBeanDefinitionParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/storm-service.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/storm-reference.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.schemas">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.handlers">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/storm.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="32" selection-start-line="3" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/StomServiceScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="68" selection-start-line="59" selection-end-line="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerProxyBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/NettyChannelPoolFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1969">
+          <caret line="208" column="42" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8185#8186#0" expanded="true" />
+            <element signature="e#8226#8227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerServiceCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/NettyClientInvokeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/internal/StormResponseWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding>
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/consumer/InvokerResponseHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="e#786#1460#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/concurrent/Semaphore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hsunfkqm/storm/framework/provider/server/NettyServerInvokeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="94" column="26" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="26" />
+          <folding>
+            <element signature="e#3096#3365#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
           </folding>
         </state>
       </provider>
