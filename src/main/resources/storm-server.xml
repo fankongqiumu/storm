@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:storm="http://www.storm.com/schema/storm-service"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.storm.com/schema/storm-service http://www.storm.com/schema/storm-service.xsd">
+
+    <!-- 发布远程服务 -->
+    <bean id="helloService" class="com.hsunfkqm.storm.framework.test.HelloServiceImpl"/>
+    <storm:service id="helloServiceRegister"
+                        interface="com.hsunfkqm.storm.framework.test.HelloService"
+                        ref="helloService"
+                        groupName="default"
+                        weight="2"
+                        appKey="ares"
+                        workerThreads="100"
+                        serverPort="8081"
+                        timeout="600"/>
+
+<!--    <storm:application name="storm-demo"/>-->
+<!--    <storm:protocol name="storm" port="8080"/>-->
+<!--    <storm:registry address="localhost:2181,localhost:2182,localhost:2183"/>-->
+
+</beans>
