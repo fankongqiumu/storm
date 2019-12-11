@@ -19,6 +19,8 @@ public class Client {
         final HelloService helloService = (HelloService) context.getBean("helloService");
         String result = helloService.sayHello("World");
         System.out.println(result);
-        System.exit(0);
+        for (;;) {
+
+        }
     }
 }

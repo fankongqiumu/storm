@@ -28,8 +28,11 @@
                    serverPort="8081"
                    timeout="600"/>
 
-<!--    <storm:application name="storm-demo"/>-->
-<!--    <storm:protocol name="storm" port="8080"/>-->
-<!--    <storm:registry address="localhost:2181,localhost:2182,localhost:2183"/>-->
+<!--    <storm:application appName="storm-demo"-->
+<!--                       registryAddress="snjka"-->
+<!--                       protocolPort="8081"-->
+<!--                       protocolName="storm"/>-->
+<!--&lt;!&ndash;    <storm:protocol name="storm" port="8080"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <storm:registry address="localhost:2181,localhost:2182,localhost:2183"/>&ndash;&gt;-->
 
 </beans>

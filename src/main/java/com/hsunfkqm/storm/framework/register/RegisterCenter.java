@@ -216,29 +216,18 @@ public class RegisterCenter implements IRegisterCenter4Invoker, IRegisterCenter4
     }
 
 
-    private void refreshServiceMetaDataMap(List<String> serviceIpList) {
-        if (serviceIpList == null) {
-            serviceIpList = Lists.newArrayList();
+    private void refreshServiceMetaDataMap(String servicePath, List<String> serviceList) {
+        if (CollectionUtils.isEmpty(serviceList) || StringUtils.isBlank(servicePath)) {
+            return;
         }
-
-        Map<String, List<ProviderService>> currentServiceMetaDataMap = Maps.newHashMap();
-        for (Map.Entry<String, List<ProviderService>> entry : serviceMetaDataMap4Consume.entrySet()) {
-            String serviceItfKey = entry.getKey();
-            List<ProviderService> serviceList = entry.getValue();
-
-            List<ProviderService> providerServiceList = currentServiceMetaDataMap.get(serviceItfKey);
-            if (providerServiceList == null) {
-                providerServiceList = Lists.newArrayList();
-            }
-
-            for (ProviderService serviceMetaData : serviceList) {
-                if (serviceIpList.contains(serviceMetaData.getServerIp())) {
-                    providerServiceList.add(serviceMetaData);
-                }
-            }
-            currentServiceMetaDataMap.put(serviceItfKey, providerServiceList);
+        String serviceName = StringUtils.split(servicePath, "/")[3];
+        List<ProviderService> providerServices = Lists.newArrayListWithExpectedSize(serviceList.size());
+        for (String serviceItf: serviceList) {
+            ProviderService providerService = getProviderServiceFormRegisterInfo(serviceName, serviceItf);
+            providerServices.add(providerService);
         }
-
+        Map<String, List<ProviderService>> currentServiceMetaDataMap = Maps.newHashMap(serviceMetaDataMap4Consume);
+        currentServiceMetaDataMap.put(serviceName, providerServices);
         serviceMetaDataMap4Consume.clear();
         serviceMetaDataMap4Consume.putAll(currentServiceMetaDataMap);
     }
@@ -255,37 +244,18 @@ public class RegisterCenter implements IRegisterCenter4Invoker, IRegisterCenter4
 
         //从ZK获取服务提供者列表
         String providePath = ROOT_PATH + "/" + remoteAppKey + "/" + groupName;
-        List<String> providerServices = zkClient.getChildren(providePath);
+        final List<String> providerServices = zkClient.getChildren(providePath);
 
         for (String serviceName : providerServices) {
             String servicePath = providePath + "/" + serviceName + "/" + PROVIDER_TYPE;
             List<String> ipPathList = zkClient.getChildren(servicePath);
             for (String ipPath : ipPathList) {
-                String serverIp = StringUtils.split(ipPath, "|")[0];
-                String serverPort = StringUtils.split(ipPath, "|")[1];
-                int weight = Integer.parseInt(StringUtils.split(ipPath, "|")[2]);
-                int workerThreads = Integer.parseInt(StringUtils.split(ipPath, "|")[3]);
-                String group = StringUtils.split(ipPath, "|")[4];
-
+                ProviderService providerService = getProviderServiceFormRegisterInfo(serviceName, ipPath);
                 List<ProviderService> providerServiceList = providerServiceMap.get(serviceName);
                 if (providerServiceList == null) {
                     providerServiceList = Lists.newArrayList();
                 }
-                ProviderService providerService = new ProviderService();
-
-                try {
-                    providerService.setServiceItf(ClassUtils.getClass(serviceName));
-                } catch (ClassNotFoundException e) {
-                    throw new RuntimeException(e);
-                }
-
-                providerService.setServerIp(serverIp);
-                providerService.setServerPort(Integer.parseInt(serverPort));
-                providerService.setWeight(weight);
-                providerService.setWorkerThreads(workerThreads);
-                providerService.setGroupName(group);
                 providerServiceList.add(providerService);
-
                 providerServiceMap.put(serviceName, providerServiceList);
             }
 
@@ -296,13 +266,14 @@ public class RegisterCenter implements IRegisterCenter4Invoker, IRegisterCenter4
                     if (currentChilds == null) {
                         currentChilds = Lists.newArrayList();
                     }
-                    currentChilds = Lists.newArrayList(Lists.transform(currentChilds, new Function<String, String>() {
-                        @Override
-                        public String apply(String input) {
-                            return StringUtils.split(input, "|")[0];
-                        }
-                    }));
-                    refreshServiceMetaDataMap(currentChilds);
+//                    currentChilds = Lists.newArrayList(Lists.transform(currentChilds, new Function<String, String>() {
+//                        @Override
+//                        public String apply(String input) {
+//                            return StringUtils.split(input, "|")[0];
+//                        }
+//                    }));
+                    refreshServiceMetaDataMap(servicePath, currentChilds);
+                    RegisterCenter.serviceMetaDataMap4Consume.values().forEach(providerServices -> System.out.println(providerServices.size()));
                 }
             });
         }
@@ -391,5 +362,30 @@ public class RegisterCenter implements IRegisterCenter4Invoker, IRegisterCenter4
 
         }
         return Pair.of(providerServices, invokerServices);
+    }
+
+
+    private ProviderService getProviderServiceFormRegisterInfo(String serviceName, String ipPath) {
+        String serverIp = StringUtils.split(ipPath, "|")[0];
+        String serverPort = StringUtils.split(ipPath, "|")[1];
+        int weight = Integer.parseInt(StringUtils.split(ipPath, "|")[2]);
+        int workerThreads = Integer.parseInt(StringUtils.split(ipPath, "|")[3]);
+        String group = StringUtils.split(ipPath, "|")[4];
+
+        ProviderService providerService = new ProviderService();
+
+        try {
+            providerService.setServiceItf(ClassUtils.getClass(serviceName));
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+        providerService.setServerIp(serverIp);
+        providerService.setServerPort(Integer.parseInt(serverPort));
+        providerService.setWeight(weight);
+        providerService.setWorkerThreads(workerThreads);
+        providerService.setGroupName(group);
+
+        return providerService;
     }
 }
